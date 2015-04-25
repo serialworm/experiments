@@ -4,20 +4,15 @@ var commander = require('commander'),
 
 commander
     .version(pkg.version)
-    .option('-c, --count', 'Run an example generator count');
+    .option('-c, --count', 'Run an example generator counter')
+    .option('-r, --reject', 'Run an example generator rejection');
 
 commander.parse(process.argv);
 
 
 if (commander.count === true) {
-
-    function* count() {
-        for (var x = 0; true; x++) {
-            yield x;
-        }
-    }
-    for (var x of generators.count()) {
-      console.log(x);
-    }
-
+    generators.count();
+}
+if (commander.reject === true) {
+    generators.reject();
 }
