@@ -1,0 +1,22 @@
+{
+  "name": "experiments",
+  "version": "0.0.0",
+  "description": "Experiments with es6 and beyond",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/serialworm/experiments.git"
+  },
+  "author": "serialworm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serialworm/experiments/issues"
+  },
+  "homepage": "https://github.com/serialworm/experiments",
+  "dependencies": {
+    "commander": "^2.8.1"
+  }
+}
